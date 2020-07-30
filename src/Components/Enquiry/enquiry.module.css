@@ -1,0 +1,17 @@
+.plan {
+  margin-top: 3rem;
+}
+.btnWrapper {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.sbmtBtn {
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid black;
+}

@@ -1,0 +1,61 @@
+/*
+* These styles creates the underlining of link
+*/
+
+.link {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    text-decoration: none !important;
+    padding-left: 0.75rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.75rem;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .link:hover {
+    text-decoration: none !important;
+  }
+  .link::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgb(70, 219, 201) 30%,
+      rgba(0, 0, 0, 0) 45%
+    );
+  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    will-change: width;
+    transform: rotate(-2deg);
+    transform-origin: left bottom;
+  }
+  
+  .link:hover::before {
+    width: 0;
+  }
+  
+  /*
+  * animation styles
+  */
+  
+  .link::before {
+    transition: width 0.1s ease-out;
+  }
+  
+  .link:hover::before {
+    transition-duration: 0.15s;
+  }
+  
+  .link:focus {
+    outline: 2px solid #fed330;
+    outline-offset: 0.5rem;
+  }
+  

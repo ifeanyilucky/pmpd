@@ -1,13 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;800;900&display=swap");
+@font-face {
+  font-family: Graphik;
+  src: url(./assets/font/GraphikRegular.otf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Graphik;
+  src: url("./assets/font/GraphikMedium.otf");
+  font-style: normal;
+  font-weight: 600;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Mulish", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #545465 !important;
+  font-weight: 400 !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  border: 6px solid #46dbc9;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #a79696, #46dbc9);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #060606;
+}
+.alink {
+  display: inline-block;
+  position: relative;
+  color: #343434;
+  text-decoration: none;
+  padding: 0 6px;
+}
+.alink::before,
+.alink::after {
+  will-change: transform;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.alink:active::before {
+  transition: 100ms ease-in;
+  background: mix(#f1f1f1, #0077ff, 40%);
+}
+.alink:after {
+  transition: 100ms ease-in;
+  border-left-color: mix(#f1f1f1, #0077ff, 40%);
+}
+
+.alink::before {
+  transition: 100ms ease-out 50ms;
+  transform-origin: 0 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: mix(#f1f1f1, #0077ff, 80%);
+}
+.alink::after {
+  transition: 50ms ease-out;
+  transform: scaleX(0);
+  transform-origin: left center;
+  bottom: 2px;
+  right: -12px;
+  border: 8px solid transparent;
+  border-left-color: mix(#f1f1f1, #0077ff, 60%);
+}
+
+.alink:hover::before {
+  transition: 100ms ease-out;
+  transform: scaleY(0.18);
+  background: mix(#f1f1f1, #0077ff, 60%);
+}
+.alink::after {
+  transition: 50ms ease-out 100ms;
+  transform: none;
 }

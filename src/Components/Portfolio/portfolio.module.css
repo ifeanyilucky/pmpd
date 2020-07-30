@@ -1,0 +1,13 @@
+section {
+  margin: 5rem 0;
+}
+
+.text {
+  margin-top: 8rem;
+  margin-left: 8rem;
+}
+.pImg {
+  position: absolute;
+  right: -5rem;
+  width: 100%;
+}

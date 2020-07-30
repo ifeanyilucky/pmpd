@@ -1,0 +1,11 @@
+.footer {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  background: url("https://res.cloudinary.com/codack/image/upload/v1595878256/SVG/footer_img_njwzfp.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto !important;
+  background-size: cover;
+  color: white !important;
+  text-align: center;
+}

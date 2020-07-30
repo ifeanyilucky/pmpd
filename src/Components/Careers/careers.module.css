@@ -1,0 +1,15 @@
+.iconList {
+  padding: 10px 14px;
+  background-color: #334ac0;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 23px;
+  align-items: flex-start;
+  margin-right: 1rem;
+  text-align: center;
+}
+section {
+  margin-top: 12rem;
+}
