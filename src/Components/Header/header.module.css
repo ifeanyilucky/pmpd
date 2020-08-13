@@ -5,7 +5,7 @@
   border-radius: 120px;
   -webkit-transform: translate(80%, -30%) rotate(-35deg);
   transform: translate(80%, -30%) rotate(-35deg);
-  background-image: linear-gradient(45deg, #53f 40%, #506690 100%);
+  background-image: linear-gradient(45deg, #3452de 40%, #506690 100%);
 }
 .header .hShape {
   position: absolute;
@@ -36,11 +36,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    to top,
-    rgb(70, 219, 201) 30%,
-    rgba(0, 0, 0, 0) 45%
-  );
+  background-image: linear-gradient(to top, #3452de 30%, rgba(0, 0, 0, 0) 45%);
 
   position: absolute;
   left: 0;
@@ -73,11 +69,7 @@
 }
 
 .heroBox {
-  background: linear-gradient(
-    90deg,
-    rgba(203, 253, 247, 0.836) 0%,
-    rgba(247, 247, 247, 0) 80%
-  );
+  background: linear-gradient(90deg, #3453de49 0%, rgba(247, 247, 247, 0) 80%);
   /*#46dbc9*/
   /* transform: rotate(3deg); */
   width: 90%;
@@ -117,4 +109,19 @@
 }
 .heroText {
   margin-top: 10rem;
+}
+.heroBtn {
+  background-color: #3452de;
+  padding: 12px 20px;
+  border: 1px solid #3452de;
+  outline: none !important;
+  display: inline-block;
+  color: white;
+  border-radius: 4px;
+  transition: 0.4s ease-in-out;
+}
+.heroBtn:hover {
+  background-color: transparent;
+  border: 1px solid #3452de;
+  color: #3452de;
 }

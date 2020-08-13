@@ -1,0 +1,32 @@
+{
+  "Language": [
+    {
+      "Name": "JavaScript",
+      "id": "1"
+    },
+    {
+      "Name": "React JS",
+      "id": "2"
+    },
+    {
+      "Name": "React Native",
+      "id": "3"
+    },
+    {
+      "Name": "NodeJS (ExpressJS)",
+      "id": "4"
+    },
+    {
+      "Name": "Java",
+      "id": "5"
+    },
+    {
+      "Name": "Dart (Flutter)",
+      "id": "6"
+    },
+    {
+      "Name": "Socket.io",
+      "id": "7"
+    }
+  ]
+}

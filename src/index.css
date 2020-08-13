@@ -1,26 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;800;900&display=swap");
-@font-face {
-  font-family: Graphik;
-  src: url(./assets/font/GraphikRegular.otf);
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: Graphik;
-  src: url("./assets/font/GraphikMedium.otf");
-  font-style: normal;
-  font-weight: 600;
-}
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
 
-body {
+body,
+html {
   margin: 0;
-  font-family: "Mulish", sans-serif !important;
+  font-family: "Rubik", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #545465 !important;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 
 code {
@@ -44,6 +34,7 @@ h4,
 h5,
 h6 {
   color: #060606;
+  font-family: Rubik !important;
 }
 .alink {
   display: inline-block;

@@ -1,11 +1,42 @@
 .footer {
   padding-top: 7rem;
   padding-bottom: 5rem;
-  background: url("https://res.cloudinary.com/codack/image/upload/v1595878256/SVG/footer_img_njwzfp.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(14, 11, 41, 0.623),
+      rgba(14, 11, 41, 0.623)
+    ),
+    url("../../assets/map.webp");
   background-repeat: no-repeat;
   width: 100%;
   height: auto !important;
   background-size: cover;
   color: white !important;
+  text-align: center;
+}
+.newsletter {
+  background: url("../../assets/map.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 80vh;
+  padding-top: 5rem;
+}
+.emailInput {
+  width: 100%;
+  font: 300 16px/100px;
+  color: #9ea4b7;
+  height: 100px;
+  padding: 0 0 0 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(8, 0, 63, 0.14);
+  box-shadow: 0 30px 60px 0 rgba(8, 0, 63, 0.14);
+  border: 0;
+  border-radius: 0;
+  border-left: 10px solid #3452de;
+  z-index: 0;
+  outline: none;
+}
+.form {
   text-align: center;
 }
