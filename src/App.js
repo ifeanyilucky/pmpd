@@ -9,6 +9,7 @@ import Careers from "./Components/Careers/Careers";
 import hireDev from "./Components/Hire/Hire";
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/enquiry" component={Enquiry} />
         <Route path="/hire-developer" component={hireDev} />
         <Route path="/who-we-are" component={About} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </Router>
   );

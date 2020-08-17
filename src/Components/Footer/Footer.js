@@ -1,6 +1,11 @@
 import React from "react";
 import style from "./footer.module.css";
-import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebookF,
+  FaArrowRight,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,11 +17,26 @@ const Footer = () => {
               <div className={`${style.form}`}>
                 <h2 className="mt-5">Subscribe to our email list</h2>
                 <p>Enter your email below</p>
-                <input
-                  type="email"
-                  placeholder="type your email"
-                  className={style.emailInput}
-                />
+                <div className={style.form1}>
+                  <form
+                    action="https://gmail.us17.list-manage.com/subscribe/post?u=3e58b6c016aab8bfb7584c3de&amp;id=e4c7d0ca68"
+                    method="post"
+                  >
+                    <input
+                      type="email"
+                      placeholder="type your email"
+                      id="mce-EMAIL"
+                      className={style.emailInput}
+                    />
+                    <span
+                      type="submit"
+                      id="mc-embedded-subscribe"
+                      className={style.submitIcon}
+                    >
+                      <FaArrowRight />
+                    </span>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

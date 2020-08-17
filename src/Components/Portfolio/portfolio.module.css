@@ -13,14 +13,13 @@ section {
 }
 .work {
   height: 30rem;
-  margin-left: 1rem;
-  width: 90%;
+  width: 50% !important;
   -webkit-box-shadow: 5px 15px 10px 0 rgba(8, 0, 63, 0.1);
   box-shadow: 5px 15px 10px 0 rgba(8, 0, 63, 0.1);
-  align-self: auto;
-  border-radius: 5px;
-  position: relative;
+
+  border-radius: 4px;
 }
+
 .work:nth-child(1) {
   background-image: url("https://res.cloudinary.com/codack/image/upload/v1597310494/jentoscopes1_enavvz.png");
   background-repeat: no-repeat;
@@ -69,11 +68,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.workrow {
-  display: flex;
-  align-self: flex-start;
-  justify-content: space-between;
-}
+
 .work .workHead {
   color: white;
   position: absolute;
@@ -91,10 +86,4 @@ section {
 .work:hover .workHead {
   display: block;
   bottom: 0;
-}
-@keyframes fadeInText {
-  0% {
-  }
-  100% {
-  }
 }

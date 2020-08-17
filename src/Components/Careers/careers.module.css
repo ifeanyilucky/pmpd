@@ -35,3 +35,14 @@ section {
   border-width: 0px 0px 0px 1px;
   border-color: #e1e1e1;
 }
+.apply {
+  text-align: center;
+}
+.applBtn {
+  padding: 12px 16px;
+  background: transparent;
+  outline: none !important;
+  border-bottom: none;
+  border-width: 1px;
+  border-color: #e1e1e1;
+}

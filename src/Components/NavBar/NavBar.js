@@ -6,17 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  //   UncontrolledDropdown,
-  //   DropdownToggle,
-  //   DropdownMenu,
-  //   DropdownItem,
   NavbarText,
-  Button,
   Modal,
-  ModalHeader,
   ModalBody,
-  ModalFooter,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import style from "./navbar.module.css";
@@ -25,7 +17,6 @@ const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  const { buttonLabel, className } = props;
 
   const [modal, setModal] = useState(false);
 
@@ -33,7 +24,7 @@ const NavBar = (props) => {
 
   return (
     <>
-      <div className="container mt-3">
+      <div className="container mt-4">
         <Navbar color="transparent" light expand="md">
           <Link to="/">
             <NavbarBrand>PMPD</NavbarBrand>
@@ -42,29 +33,29 @@ const NavBar = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="alink" href="#">
+                <Link to="/" className="alink">
                   Home
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className="alink">
-                  <Link to="/who-we-are">Who we are</Link>
-                </NavLink>
+                <Link to="/who-we-are" className="alink">
+                  Who we are
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className="alink" href="#">
+                <a href="#portfolio" exact className="alink">
                   Portfolio
-                </NavLink>
+                </a>
               </NavItem>
               <NavItem>
-                <NavLink className="alink" href="#">
+                <Link to="/contact" className="alink">
                   What we do
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className="alink" href="#">
+                <Link to="/contact" className="alink">
                   Contact us
-                </NavLink>
+                </Link>
               </NavItem>
               {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -89,9 +80,9 @@ const NavBar = (props) => {
                 <button className={style.hireBtn} onClick={toggle2}>
                   HIRE A DEV <FaClone />
                 </button>
-                <Modal isOpen={modal} toggle2={toggle2} className={className}>
+                <Modal isOpen={modal} toggle2={toggle2}>
                   <ModalBody>
-                    <div className="my-3">
+                    <div className="my-3 px-5">
                       <h2>Hire Talents</h2>
                       <span className="text-muted">
                         Contact us below let's get talking.

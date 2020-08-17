@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./careers.module.css";
 import { Container } from "reactstrap";
-import { FaCode } from "react-icons/fa";
 
 const Careers = () => {
   return (
@@ -34,15 +33,21 @@ const Careers = () => {
                       alt="opening"
                     />
                     <h4 className="my-4 font-weight-lighter">
-                      Mobile Full-stack Developer
+                      Senior Linux/AWS DevOps/Security Engineer
                     </h4>
                     <p className="mt-4">
-                      Looking for ambitious senior mobile full-stack developers
-                      who wish to become part of the successful mobile/game
-                      development startup. As a team we are a group of
-                      super-talented, fun, laid-back software…
+                      We are looking for an experienced DevOps Engineer with a
+                      recent track record of building and maintaining complex
+                      infrastructure within AWS (Amazon Web Services).
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-10 mx-auto">
+                <div className={style.apply}>
+                  <button className={style.applBtn}>Apply Now</button>
                 </div>
               </div>
             </div>

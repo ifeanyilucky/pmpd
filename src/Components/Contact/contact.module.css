@@ -1,0 +1,19 @@
+.boxOne {
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0px 20px 30px rgba(8, 8, 8, 0.01),
+    0px 14px 30px rgba(0, 0, 0, 0.1);
+}
+.boxTwo {
+  box-shadow: 0px 20px 30px rgba(8, 8, 8, 0.01),
+    0px 14px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-left: -5rem;
+  background: rgb(20, 4, 110);
+  height: auto;
+  margin-top: 2rem;
+  color: white;
+}
+.boxTwo h3 {
+  color: white;
+}

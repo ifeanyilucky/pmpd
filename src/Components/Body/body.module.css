@@ -43,3 +43,31 @@ section {
   position: absolute;
   right: -6.5rem;
 }
+.SProject {
+  margin-top: 10rem;
+}
+.link_arrow {
+  overflow: hidden;
+  height: 1em;
+  margin-left: 0.5em;
+  margin-bottom: -0.125em;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: transparent;
+}
+.contactLink {
+  color: #3452de;
+  font-weight: 400;
+  text-decoration: none !important;
+}
+.whyUs {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .whyUs {
+    margin-top: 45rem;
+  }
+  .SProject {
+    margin-top: 40rem;
+  }
+}

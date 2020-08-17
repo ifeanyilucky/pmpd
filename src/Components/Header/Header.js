@@ -16,32 +16,23 @@ function Header() {
         <NavBar />
         <Container>
           <div className="row mt-5">
-            <div
-              data-aos="fade"
-              className={`${style.heroText} col-lg-5 col-sm-12 col-md-12`}
-            >
-              <h1
-                style={{
-                  fontWeight: "600",
-                  fontSize: "60px",
-                  marginBottom: "1.7rem",
-                  color: "#3452de",
-                }}
-              >
-                We are Pmpd
-              </h1>
+            <div data-aos="fade" className={`${style.heroText} col-md-5`}>
+              <h1>We are Pmpd</h1>
               <p style={{ fontSize: "20px", fontWeight: "300" }}>
                 We are Software Engineers, Designers, Product Managers and
                 Strategists. We help startups and established companies
                 implement and advance their client experiences using technology.
               </p>
               <div className="row mt-5">
-                <div className="col-sm-6">
+                <div className="col-4">
                   <button className={style.heroBtn}>Hire a dev</button>
                 </div>
-                <div className="col-sm-6">
-                  <Link to="/enquiry">
-                    {" "}
+                <div className="col-8 mt-3">
+                  <Link
+                    className="text-decoration-none"
+                    to="/enquiry"
+                    style={{ color: "#212529" }}
+                  >
                     <div className={`${style.link}`}>Let's talk</div>
                   </Link>
                 </div>
