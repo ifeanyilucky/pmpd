@@ -9,6 +9,7 @@ import {
   NavbarText,
   Modal,
   ModalBody,
+  NavLink,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import style from "./navbar.module.css";
@@ -33,14 +34,18 @@ const NavBar = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/" className="alink">
-                  Home
-                </Link>
+                <NavLink>
+                  <Link to="/" className="alink">
+                    Home
+                  </Link>
+                </NavLink>
               </NavItem>
               <NavItem>
-                <Link to="/who-we-are" className="alink">
-                  Who we are
-                </Link>
+                <NavLink>
+                  <Link to="/who-we-are" className="alink">
+                    Who we are
+                  </Link>
+                </NavLink>
               </NavItem>
               <NavItem>
                 <a href="#portfolio" exact className="alink">

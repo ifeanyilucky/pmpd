@@ -93,3 +93,7 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   background-color: #1530a8;
 }
+.logo {
+  width: 15%;
+  border: 3px solid black;
+}

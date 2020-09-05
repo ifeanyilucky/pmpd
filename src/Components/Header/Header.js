@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import NavBar from "../NavBar/NavBar";
+
 import { Container } from "reactstrap";
 import style from "./header.module.css";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import illustration from "../../assets/illustration-2.png";
+import Navi from "../Navigation/Navi";
 function Header() {
   useEffect(() => {
     Aos.init({ length: 2000 });
@@ -13,7 +14,7 @@ function Header() {
     <>
       <div className={style.header}>
         <div className={style.heroBox}></div>
-        <NavBar />
+        <Navi />
         <Container>
           <div className="row mt-5">
             <div data-aos="fade" className={`${style.heroText} col-md-5`}>
