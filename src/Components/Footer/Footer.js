@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./footer.module.css";
+import Pwu from "../pwu/Pwu";
 import {
   FaInstagram,
   FaTwitter,
@@ -10,6 +11,7 @@ import {
 const Footer = () => {
   return (
     <>
+      <Pwu />
       <div>
         <section>
           <div className={style.newsletter}>

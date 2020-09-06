@@ -65,9 +65,12 @@ section {
 }
 @media (max-width: 600px) {
   .whyUs {
-    margin-top: 45rem;
+    margin-top: 2rem;
   }
-  .SProject {
-    margin-top: 40rem;
+  .desktop {
+    display: none;
+  }
+  .projectBG {
+    display: none;
   }
 }

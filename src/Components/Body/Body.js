@@ -4,6 +4,7 @@ import style from "./body.module.css";
 
 import { Link } from "react-router-dom";
 import Aos from "aos";
+import Pwu from "../pwu/Pwu";
 
 const Body = () => {
   useEffect(() => {
@@ -287,48 +288,6 @@ const Body = () => {
             </div>
           </div>
         </Container>
-
-        <div className={`${style.SProject}`}>
-          <Container>
-            <div className="row">
-              <div className="col-xl-6">
-                <h2 className="font-weight-lighter mb-4">
-                  COMPLETE SCHOOL PROJECT TOPICS MATERIALS UNIVERSITY STUDENT
-                </h2>
-                <p>
-                  PMPD provides free Research Project Topics for Final Year
-                  Undergraduate Students in Nigeria, with available Complete
-                  Project Materials, Abstracts and other previews for courses in
-                  Business Management, Sciences, Engineering and more for
-                  Nigerian and foreign projects on OND, HND, B.Sc and other
-                  projects writing (no plagiarism).
-                </p>
-                <Link to="/contact" className={style.contactLink}>
-                  Contact support
-                  <svg
-                    aria-hidden="true"
-                    viewBox="0 0 48 16"
-                    className={style.link_arrow}
-                    focusable="false"
-                    role="presentation"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g className="link__arrow-inner">
-                      <line x1="0" y1="8" x2="46" y2="8"></line>
-                      <polyline points="39.5 1, 46.5 8, 39.5 15"></polyline>
-                    </g>
-                  </svg>
-                </Link>
-              </div>
-              <div className={`${style.projectBG} col-xl-6`}>
-                <img
-                  src="https://res.cloudinary.com/codack/image/upload/v1597538584/black-girl-graduating-college_xxfem7.jpg"
-                  alt="Project write up"
-                />
-              </div>
-            </div>
-          </Container>
-        </div>
       </section>
     </>
   );
