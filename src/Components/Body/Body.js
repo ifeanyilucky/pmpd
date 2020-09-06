@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import style from "./body.module.css";
 
-import { Link } from "react-router-dom";
 import Aos from "aos";
-import Pwu from "../pwu/Pwu";
 
 const Body = () => {
   useEffect(() => {
