@@ -277,7 +277,7 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-5">
+            <div className={`${style.parentDekstop} col-md-5`}>
               <img
                 src="https://res.cloudinary.com/codack/image/upload/v1597306512/surface-studio-d976cd5750272b053dae2daba348f4d2_ica4gm.png"
                 alt="desktop"

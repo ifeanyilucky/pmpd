@@ -41,7 +41,8 @@ section {
 .desktop {
   width: 100%;
   position: absolute;
-  right: -6.5rem;
+  right: 0;
+  top: 0;
 }
 .SProject {
   margin-top: 10rem;
@@ -73,4 +74,7 @@ section {
   .projectBG {
     display: none;
   }
+}
+.parentDekstop {
+  position: relative;
 }

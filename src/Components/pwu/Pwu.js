@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./pwu.module.css";
-import { Container } from "reactstrap";
 
 const Pwu = () => {
   return (

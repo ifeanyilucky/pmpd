@@ -9,8 +9,15 @@ const Enquiry = () => {
     <>
       <Container>
         <NavBar />
-        <div>
-          <h1 className="text-center mt-5">Tell us about your product</h1>
+        <div className="text-center mt-5">
+          <h1>Tell us about your product</h1>
+          <span className="text-muted">
+            Do you have a software development project to implement? We have
+            people to work on it. We will be glad to answer all your questions
+            as well as estimate any project of yours. Use the form below to
+            describe the project and we will get in touch with you within 1
+            business day.
+          </span>
         </div>
         <div className="row">
           <div className="col-10 mx-auto">

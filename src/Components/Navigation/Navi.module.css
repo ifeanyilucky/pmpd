@@ -1,5 +1,5 @@
 .NavBarItems {
-  background: rgba(73, 63, 252, 1) 100%;
+  background: transparent;
   height: 80px;
   display: flex;
   align-items: center;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 .navLogo {
-  color: white;
+  color: blue;
   justify-self: start;
   cursor: pointer;
   margin-left: 20px;
@@ -25,7 +25,7 @@
   justify-content: end;
 }
 .navlink {
-  color: white;
+  color: black;
   transition: 0.2s;
   padding: 0.5rem 0.5rem;
   font-weight: 400;
@@ -39,7 +39,7 @@
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 3px 3px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .bars {
-  color: white;
+  color: black;
 }
 .menuI {
   display: none;
@@ -88,7 +88,11 @@
     overflow: hidden;
   }
   .active {
-    background: rgba(73, 63, 252, 1) 100%;
+    background-image: url("https://res.cloudinary.com/codack/image/upload/v1599420152/front-end-bg_bvhjez.jpg");
+    background-repeat: no-repeat;
+
+    position: relative;
+    background-size: cover;
     left: 0;
     transition: 0.5s ease;
     z-index: 100;
@@ -102,11 +106,13 @@
   }
   .navlink {
     text-align: center;
+
     padding: 2rem;
     background-color: black;
     border: 2px solid black;
     display: table;
     background-image: none;
+    color: white;
   }
   .navlink:hover {
     color: black;
@@ -123,6 +129,7 @@
     font-size: 1.8rem;
     cursor: pointer;
     text-transform: uppercase !important;
+    color: white;
   }
   .navLogo {
     position: absolute;
@@ -131,7 +138,7 @@
     transform: translate(25%, 50%);
   }
   .times {
-    color: white;
+    color: black;
     font-weight: 300;
   }
 }

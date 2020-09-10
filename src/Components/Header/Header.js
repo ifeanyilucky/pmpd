@@ -4,7 +4,6 @@ import { Container } from "reactstrap";
 import style from "./header.module.css";
 import { Link } from "react-router-dom";
 import Aos from "aos";
-import illustration from "../../assets/illustration-2.png";
 import Navi from "../Navigation/Navi";
 function Header() {
   useEffect(() => {
@@ -16,19 +15,19 @@ function Header() {
         <div className={style.heroBox}></div>
         <Navi />
         <Container>
-          <div className="row mt-5">
-            <div data-aos="fade" className={`${style.heroText} col-md-5`}>
-              <h1>We are Pmpd</h1>
+          <div className="row mt-5" data-aos="fade">
+            <div className={`${style.heroText} col-md-5`}>
+              <h1>
+                Software Development{" "}
+                <span style={{ color: "orange" }}>Company</span>
+              </h1>
               <p style={{ fontSize: "20px", fontWeight: "300" }}>
                 We are Software Engineers, Designers, Product Managers and
                 Strategists. We help startups and established companies
                 implement and advance their client experiences using technology.
               </p>
               <div className="row mt-5">
-                <div className="col-4">
-                  <button className={style.heroBtn}>Hire a dev</button>
-                </div>
-                <div className="col-8 mt-3">
+                <div className="col-7 mt-3">
                   <Link
                     className="text-decoration-none"
                     to="/enquiry"
@@ -42,8 +41,7 @@ function Header() {
             <div className="col-lg-7">
               <div>
                 <img
-                  data-aos="fade"
-                  src={illustration}
+                  src="https://res.cloudinary.com/codack/image/upload/v1599419960/front-end-development-main-banner_wkhp8c.png"
                   alt="hero"
                   className="mt-5 w-100"
                 />

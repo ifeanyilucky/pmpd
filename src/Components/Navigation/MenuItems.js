@@ -2,12 +2,12 @@ import style from "./Navi.module.css";
 export const MenuItems = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     cName: `${style.navlink}`,
   },
   {
     title: "Who we are",
-    url: "#",
+    url: "/contact",
     cName: `${style.navlink}`,
   },
   {
