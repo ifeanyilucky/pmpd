@@ -279,7 +279,7 @@ const Body = () => {
             </div>
             <div className={`${style.parentDekstop} col-md-5`}>
               <img
-                src="https://res.cloudinary.com/codack/image/upload/v1597306512/surface-studio-d976cd5750272b053dae2daba348f4d2_ica4gm.png"
+                src="https://res.cloudinary.com/codack/image/upload/v1600032347/undraw_progressive_app_m9ms_vabaiv.svg"
                 alt="desktop"
                 className={`${style.desktop}`}
               />

@@ -1,51 +1,27 @@
 .footer {
   padding-top: 7rem;
   padding-bottom: 5rem;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.815)),
+  background: linear-gradient(0deg, #001022ea, #001022ea),
     url("../../assets/map.webp");
   background-repeat: no-repeat;
   width: 100%;
   height: auto !important;
   background-size: cover;
-  color: white !important;
+  color: rgb(184, 184, 184) !important;
   text-align: center;
+  font-size: 14px;
 }
-.newsletter {
-  background: url("../../assets/map.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 80vh;
-  padding-top: 5rem;
-}
-.emailInput {
-  width: 100%;
-  font: 300 16px/100px;
-  color: #9ea4b7;
-  height: 100px;
-  padding: 0 0 0 50px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(8, 0, 63, 0.14);
-  box-shadow: 0 30px 60px 0 rgba(8, 0, 63, 0.14);
-  border: 0;
-  border-radius: 0;
-  border-left: 10px solid #3452de;
-  z-index: 0;
-  outline: none;
-  font-size: 20px;
-}
-.form {
-  text-align: center;
-}
-.form1 {
-  position: relative;
-}
-.submitIcon {
-  font-size: 30px;
-  font-weight: 300;
-  position: absolute;
+.icons {
+  background-color: #0085f2;
+  padding: 8px 12.6px;
+  display: inline-block;
+  border-radius: 50%;
   cursor: pointer;
-  top: 1.6rem;
-  right: 1.6rem;
-  color: #3452de;
+  margin-right: 1rem;
+  font-size: 22px;
+  transition: all 0.6s ease-in-out;
+}
+.icons:hover {
+  background-color: white;
+  color: #0085f2;
 }

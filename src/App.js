@@ -10,6 +10,7 @@ import Careers from "./Components/Careers/Careers";
 import hireDev from "./Components/Hire/Hire";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function Home() {
       <Portfolio />
       <Careers />
       <Hire />
+      <Footer />
     </>
   );
 }
