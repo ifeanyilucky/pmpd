@@ -172,7 +172,7 @@ const Enquiry = () => {
                 <FormGroup>
                   <Label for="revenue">
                     Any comment? (If there is an additional description yet
-                    specified)
+                    specified.)
                   </Label>
                   <textarea
                     className="form-control input-group-lginput-group"
