@@ -1,16 +1,17 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import style from "./enquiry.module.css";
-
 import { Form, FormGroup, Label, Input, Container } from "reactstrap";
+import Navi from "../Navigation/Navi";
 
 const Enquiry = () => {
   return (
     <>
       <Container>
-        <NavBar />
-        <div className="text-center mt-5">
-          <h1>Tell us about your product</h1>
+        <Navi />
+
+        <div className="text-center mt-5 mb-5">
+          <h1 className="secHead1">Tell us about your product</h1>
           <span className="text-muted">
             Do you have a software development project to implement? We have
             people to work on it. We will be glad to answer all your questions
@@ -20,7 +21,7 @@ const Enquiry = () => {
           </span>
         </div>
         <div className="row">
-          <div className="col-10 mx-auto">
+          <div className="col-xl-7 mx-auto">
             <Form>
               <div className={style.plan}>
                 <FormGroup>
@@ -184,11 +185,40 @@ const Enquiry = () => {
                 </FormGroup>
               </div>
               <div className={style.btnWrapper}>
-                <button type="submit" className={style.sbmtBtn}>
+                <a type="submit" className="Plink" style={{ fontSize: "20px" }}>
                   SUBMIT
-                </button>
+                </a>
               </div>
             </Form>
+          </div>
+          <div className="col-sm-4 mt-5">
+            <h1 className="secHead">We're here to help.</h1>
+            <p>
+              At PMPD we ease the process for you and make things seamless. We
+              listen to your requirements with utmost attention so that we not
+              only understand your requirements but also analyze and suggest the
+              best approach possible for your development.
+            </p>
+
+            <ul className="list-group">
+              <li>
+                <h5>Share your Requirement</h5>{" "}
+                <p>
+                  We keenly analyze the requirements that you provide. This
+                  makes things transparent from the beginning between us and
+                  further eases the overall development process.
+                </p>
+              </li>
+              <li>
+                <h5>Understanding your Requirement</h5>
+
+                <p>
+                  Once we have your requirement, we will allocate our expert
+                  team for in-depth analysis, suggestions as well as
+                  personalized recommendations to choose the right approach.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </Container>

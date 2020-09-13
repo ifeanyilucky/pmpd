@@ -19,6 +19,7 @@ section {
     0px 14px 30px rgba(155, 81, 224, 0.1);
   border-radius: 4px;
   border: 1px solid #e0e0e091;
+  margin-left: auto;
 }
 .box.box2:nth-child(2),
 .box.box2:nth-child(4),
