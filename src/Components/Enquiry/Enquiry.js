@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
 import style from "./enquiry.module.css";
 import { Form, FormGroup, Label, Input, Container } from "reactstrap";
 import Navi from "../Navigation/Navi";
@@ -185,9 +184,13 @@ const Enquiry = () => {
                 </FormGroup>
               </div>
               <div className={style.btnWrapper}>
-                <a type="submit" className="Plink" style={{ fontSize: "20px" }}>
+                <div
+                  type="submit"
+                  className="Plink"
+                  style={{ fontSize: "20px" }}
+                >
                   SUBMIT
-                </a>
+                </div>
               </div>
             </Form>
           </div>
