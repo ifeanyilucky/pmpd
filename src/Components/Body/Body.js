@@ -211,7 +211,7 @@ const Body = () => {
     <>
       <section>
         <Container>
-          <h3 className={style.whyUs}>WHY CHOOSE US?</h3>
+          <h3 className="secHead text-center">Why choose us?</h3>
           <div className="row">
             {reason.map((why) => (
               <>
@@ -219,7 +219,7 @@ const Body = () => {
                   <div
                     key={why.id}
                     data-aos="fade-up"
-                    className={`${style.box} ${style.box2}`}
+                    className={`${style.box}`}
                   >
                     <div className={style.icon}>{why.icon}</div>
                     <h5>{why.title}</h5>
@@ -236,7 +236,7 @@ const Body = () => {
           <div className="row">
             <div className="container mx-auto col-md-7">
               <div>
-                <h1 className="font-weight-lighter">
+                <h1 className="secHead">
                   Our Quality feature that customers always prefer to use on
                   their products.
                 </h1>

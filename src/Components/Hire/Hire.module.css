@@ -1,0 +1,19 @@
+.hire {
+  padding: 7em 0;
+  background: url(https://res.cloudinary.com/codack/image/upload/v1599957695/pattern-bg_fyi6p6.svg);
+  background-repeat: no-repeat;
+  background-color: #0085f2;
+  background-position: right;
+  color: white;
+}
+@media (max-width: 770px) {
+  .hire {
+    background: #0085f2;
+    padding: 4em 0;
+  }
+}
+@media (max-width: 1200px) {
+  .hire {
+    padding: 4em 0;
+  }
+}

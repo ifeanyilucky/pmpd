@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;800&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700;800;900&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap"); */
 
 body,
 html {
   margin: 0;
-  font-family: "Rubik", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #545465 !important;
@@ -18,7 +18,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 15px;
 }
 ::-webkit-scrollbar-track {
@@ -27,7 +27,7 @@ code {
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, #a79696, #0755bb);
-}
+} */
 h1,
 h2,
 h3,
@@ -35,7 +35,7 @@ h4,
 h5,
 h6 {
   color: #060606;
-  font-family: Rubik !important;
+  font-family: Montserrat !important;
 }
 .alink {
   display: inline-block;
@@ -90,4 +90,37 @@ h6 {
 .alink::after {
   transition: 50ms ease-out 100ms;
   transform: none;
+}
+.Plink {
+  background-image: linear-gradient(120deg, #333333 0%, #0077ff 100%);
+  background-repeat: no-repeat;
+  background-size: 50% 0.4em;
+  background-position: 0 88%;
+  transition: all 0.25s ease-in;
+  color: #333333;
+  font-weight: 800;
+}
+
+.Plink:hover {
+  background-size: 100% 88%;
+  text-decoration: none;
+  color: white;
+}
+.secHead {
+  font-weight: 800;
+  font-size: 38px;
+  color: #333333;
+}
+@media (max-width: 800px) {
+  .secHead {
+    font-size: 22px;
+  }
+  .secHead1 {
+    font-size: 28px;
+  }
+}
+.secHead1 {
+  font-weight: 800;
+  font-size: 59px;
+  color: #333333;
 }

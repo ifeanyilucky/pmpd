@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Container } from "reactstrap";
-import NavBar from "../NavBar/NavBar";
 import style from "./about.module.css";
 import Helmet from "react-helmet";
+import Navi from "../Navigation/Navi";
 import langData from "./lang.json";
 
 const About = ({ title }) => {
@@ -31,41 +31,103 @@ const About = ({ title }) => {
       </Helmet>
       <div>
         <Container>
-          <NavBar />
+          <Navi />
           <div className="row">
-            <div className="col-7 mx-auto text-center">
-              <h1 className={style.headText}>
-                We are passionate about helping your business with world class
-                technology.
+            <div className="col-12 mx-auto text-center">
+              <h1 className="secHead1 mt-5">
+                We create smart software solutions.
               </h1>
+              <p className="my-4 w-50 text-center mx-auto">
+                PMPD helps enterprises deliver custom software solutions at
+                startup speed by building effective software teams and providing
+                agile tech talent on-demand.
+              </p>
+              <a href="/" className="Plink" style={{ fontSize: "23px" }}>
+                Get in touch
+              </a>
             </div>
           </div>
         </Container>
 
-        <section className={style.section2}>
+        <section>
           <Container>
-            <div className="row">
-              <div className="col-9 mx-auto">
-                <div className={`${style.box} text-center`}>
-                  <h1 className={style.headText2}>About us</h1>
+            <img
+              src="https://res.cloudinary.com/codack/image/upload/v1595692486/office_aqlgdn.webp"
+              alt="office"
+              className="w-100"
+            />
+            <div className="row mt-5">
+              <div className="col-md-8 mx-auto">
+                <h4 className="font-weight-bold gray">Our founding story</h4>
+                <p>
+                  The need for software is growing continuously. Yet enterprises
+                  struggle to gain access to tech talent in order to stay
+                  relevant and competitive. In 2018, Kingsley Okemiri and
+                  Ifeanyi Lucky founded PMPD to address this challenge by moving
+                  from traditional software development approaches to
+                  remote-first and freelance-based setups.
+                </p>
+                <p>
+                  Today, PMPD has grown into a community of experienced tech
+                  freelancers from around the world. By providing enterprises
+                  with high-performing teams and using a build-operate-transfer
+                  model, they can deliver software on time, in scope, and on
+                  budget. This allows clients to reach business goals, ramp up
+                  their digital capabilities, and remain organizationally
+                  flexible.
+                </p>
+              </div>
+            </div>
+          </Container>
+          <Container>
+            <h2 className="secHead text-center mt-5">
+              What makes working with us unique?
+            </h2>
+            <p className="text-center">
+              We help you turn your digital strategies into smart software
+              solutions.
+            </p>
+            <div className="row mt-5">
+              <div className="col-md-6 px-5">
+                <div>
+                  <h4 className="font-weight-bold">We focus on your goals.</h4>
                   <p>
-                    PMPD is a software Engineering Consulting Business. We are a
-                    team of world-class agile developers, product managers, and
-                    designers who work in concert with you to solve problems and
-                    transform the digital experience of individuals, companies
-                    and governments.
+                    We help you turn your business requirements into smart
+                    technical solutions on time and on budget.
                   </p>
+                </div>
+
+                <div>
+                  <h4 className="font-weight-bold">
+                    We are responsible & reliable.
+                  </h4>
                   <p>
-                    PMPD provides IT Consultancy, software design and
-                    development as well as professional services and software
-                    deployment and maintenance to the following to individuals,
-                    companies and governments cross cutting the following
-                    sectors: Governments, Financial Services, Transportation,
-                    Hospitality, Logistics, E-Commerce, Education.
+                    By working with professional and trustworthy experts, we can
+                    deliver projects successfully.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6 px-5">
+                <div>
+                  <h4 className="font-weight-bold">We shape modern work.</h4>
+                  <p>
+                    We achieve results quickly and effectively and rely on agile
+                    methods, tailored to your needs.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-weight-bold">
+                    We care about our partners.
+                  </h4>
+                  <p>
+                    We ramp up your digital capabilities and make sure that you
+                    can continue the project independently.
                   </p>
                 </div>
               </div>
             </div>
+          </Container>
+          <Container>
             <div className="row" style={{ marginTop: "6rem" }}>
               <div className={`${style.timeline} col-md-4 text-center`}>
                 <div className={style.digit}>2+</div>
@@ -100,8 +162,8 @@ const About = ({ title }) => {
             <div className="row">
               {vmb.map((vmb1) => (
                 <>
-                  <div className="col-md-4 text-center">
-                    <div className={`${style.box} ${style.box2}`}>
+                  <div className="col-md-4">
+                    <div className={`${style.box}`}>
                       <h4>{vmb1.title}</h4>
                       <p>{vmb1.text}</p>
                     </div>

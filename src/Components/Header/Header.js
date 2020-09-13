@@ -17,16 +17,26 @@ function Header() {
         <Container>
           <div className="row mt-5" data-aos="fade">
             <div className={`${style.heroText} col-md-5`}>
+              <span className="text-muted">SOFTWARE DESIGN & DEVELOPMENT</span>
               <h1>
-                Software Development{" "}
-                <span style={{ color: "orange" }}>Company</span>
+                {/* Software Development{" "} */}
+                Go beyond <br />
+                <span>technology,</span>
+                <br />
+                Do PMPD
               </h1>
-              <p style={{ fontSize: "20px", fontWeight: "300" }}>
+              <p
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "300",
+                  lineHeight: "26px",
+                }}
+              >
                 We are Software Engineers, Designers, Product Managers and
                 Strategists. We help startups and established companies
                 implement and advance their client experiences using technology.
               </p>
-              <div className="row mt-5">
+              <div className="row">
                 <div className="col-7 mt-3">
                   <Link
                     className="text-decoration-none"

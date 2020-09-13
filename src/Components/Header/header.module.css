@@ -16,73 +16,6 @@
 * These styles creates the underlining of link
 */
 
-.link {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  text-decoration: none !important;
-  padding-left: 0.75rem;
-  padding-bottom: 0.25rem;
-  padding-right: 0.75rem;
-  color: #000000;
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-}
-.link:hover {
-  text-decoration: none !important;
-}
-.link::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, #3452de 30%, rgba(0, 0, 0, 0) 45%);
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  will-change: width;
-  transform: rotate(-2deg);
-  transform-origin: left bottom;
-}
-
-.link:hover::before {
-  width: 0;
-}
-
-/*
-* animation styles
-*/
-
-.link::before {
-  transition: width 0.1s ease-out;
-}
-
-.link:hover::before {
-  transition-duration: 0.15s;
-}
-
-.link:focus {
-  outline: 2px solid #fed330;
-  outline-offset: 0.5rem;
-}
-
-/* .heroBox {
-  background: linear-gradient(90deg, #3453de49 0%, rgba(247, 247, 247, 0) 80%);
- 
-  width: 90%;
-  height: 100vh;
-  position: absolute;
-  top: 6rem;
-  left: 3.5rem;
-  border-radius: 60px;
-
-  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-} */
-
 .header {
   height: 100vh;
   width: 100%;
@@ -101,6 +34,25 @@
 }
 .heroText {
   margin-top: 5rem;
+}
+.link {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: capitalize !important;
+  font-weight: 800;
+}
+.link,
+.heroText h1 span {
+  background-image: linear-gradient(120deg, #333333 0%, #0077ff 100%);
+  background-repeat: no-repeat;
+  background-size: 50% 0.4em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  color: #333333;
+}
+.heroText h1 span:hover,
+.link:hover {
+  background-size: 100% 88%;
 }
 .heroBtn {
   background-color: #3452de;
@@ -126,10 +78,12 @@
 @media (max-width: 500px) {
 }
 .heroText h1 {
-  margin-bottom: 1.7rem;
-  font-weight: 500;
-  color: #3452de;
-  font-size: 60px;
+  font-weight: 800;
+  color: #333333;
+  font-size: 55px;
+  font-size: 54px;
+  line-height: 62px;
+  margin-bottom: 7px;
 }
 @media (max-width: 480px) {
   .heroText {

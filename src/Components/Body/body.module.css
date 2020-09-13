@@ -61,13 +61,8 @@ section {
   font-weight: 400;
   text-decoration: none !important;
 }
-.whyUs {
-  text-align: center;
-}
+
 @media (max-width: 600px) {
-  .whyUs {
-    margin-top: 2rem;
-  }
   .desktop {
     display: none;
   }
