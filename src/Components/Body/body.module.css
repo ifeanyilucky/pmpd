@@ -61,7 +61,7 @@ section {
 
 @media (max-width: 600px) {
   .desktop {
-    display: none;
+    display: block;
   }
   .projectBG {
     display: none;
