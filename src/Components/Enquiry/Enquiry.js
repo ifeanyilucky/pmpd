@@ -187,7 +187,7 @@ const Enquiry = () => {
                 <div
                   type="submit"
                   className="Plink"
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px", display: "inline-block" }}
                 >
                   SUBMIT
                 </div>

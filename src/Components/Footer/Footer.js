@@ -1,12 +1,7 @@
 import React from "react";
 import style from "./footer.module.css";
-import Pwu from "../pwu/Pwu";
-import {
-  FaInstagram,
-  FaTwitter,
-  FaFacebookF,
-  FaArrowRight,
-} from "react-icons/fa";
+
+import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (

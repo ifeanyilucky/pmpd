@@ -58,18 +58,7 @@
   outline: 2px solid #fed330;
   outline-offset: 0.5rem;
 }
-.cancel {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 20px;
-  font-size: 25px;
-  color: grey;
-  cursor: pointer;
-}
-.cancel:hover {
-  color: red;
-}
+
 .hireBtn {
   background-color: #3452de;
   border: none;
