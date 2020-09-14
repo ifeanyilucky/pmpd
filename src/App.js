@@ -11,6 +11,7 @@ import hireDev from "./Components/Hire/Hire";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Pwu from "./Components/pwu/Pwu";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function Home() {
       <Body />
       <Portfolio />
       <Careers />
+      <Pwu />
       <Hire />
       <Footer />
     </>

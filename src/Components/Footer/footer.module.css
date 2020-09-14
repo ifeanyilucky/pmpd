@@ -20,6 +20,13 @@
   margin-right: 1rem;
   font-size: 22px;
   transition: all 0.6s ease-in-out;
+  color: white;
+}
+.icons a {
+  color: white;
+}
+.icons a:hover {
+  color: #0085f2;
 }
 .icons:hover {
   background-color: white;
