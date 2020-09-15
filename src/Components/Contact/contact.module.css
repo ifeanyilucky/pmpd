@@ -17,3 +17,24 @@
 .boxTwo h3 {
   color: white;
 }
+.contactF {
+  border-bottom: 1px solid #9b9b9b;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none !important;
+  padding-bottom: 13px;
+  font-size: 14px;
+  padding-right: 30px;
+  background: transparent;
+  width: 100%;
+}
+.contactS {
+  background-color: #ebebeb;
+}
+.col-lg-12 .contactF {
+  background-color: transparent;
+  width: 100% !important;
+  height: calc(1.5em + 0.75rem + 2px);
+  display: block;
+}

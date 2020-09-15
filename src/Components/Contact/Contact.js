@@ -1,88 +1,75 @@
 import React from "react";
 import { Container } from "reactstrap";
+import Navi from "../Navigation/Navi";
 import style from "./contact.module.css";
-import {
-  IoIosPin,
-  IoMdMail,
-  IoIosPhonePortrait,
-  IoLogoFacebook,
-  IoLogoInstagram,
-  IoLogoWhatsapp,
-} from "react-icons/io";
-import NavBar from "../NavBar/NavBar";
-
+import Footer from "../Footer/Footer";
 const Contact = () => {
   return (
     <>
-      <div>
-        <NavBar />
+      <Navi />
+      <div className={style.contactS}>
         <Container>
-          <div className="row my-5">
-            <div className="col-sm-8 mx-auto">
-              <div className={style.boxOne}>
-                <div className="row">
-                  <div className="col-sm-4">
-                    <div className={style.boxTwo}>
-                      <h3>Contact us</h3>
-                      <div className={`mb-4`}>
-                        <IoIosPin />{" "}
-                        <span>0 Winrose Street, PZ, Benin City</span>
-                      </div>
-                      <div className={`mb-4`}>
-                        <IoMdMail />
-                        <span>hello@pmpd.com.ng</span>
-                      </div>
-                      <div className={`mb-4`}>
-                        <IoIosPhonePortrait />
-                        <span>+234 812 313 3827</span>
-                      </div>
-                      <div class="flex-center text-center">
-                        <IoLogoFacebook /> <IoLogoInstagram />{" "}
-                        <IoLogoWhatsapp />
-                      </div>
+          <div className="row pt-5 pb-5">
+            <div className="col-xl-6">
+              <div>
+                <h1 style={{ fontWeight: "700" }}>Let's work together</h1>
+                <p className="mt-4">
+                  We are providing great business solutions to businesses.
+                </p>
+              </div>
+              <div>
+                <form>
+                  <div className="row mt-5">
+                    <div className="col-6">
+                      <input
+                        type="text"
+                        placeholder="Full Name"
+                        className={style.contactF}
+                      />
+                    </div>
+                    <div className="col-6">
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        className={style.contactF}
+                      />
                     </div>
                   </div>
-                  <div className="col-sm-8 px-5">
-                    <h3>Get in touch</h3>
-                    <p className="text-muted">
-                      Feel free to drop us a line below!
-                    </p>
-                    <form>
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          className="form-control-sm form-control"
-                          placeholder="Fullname"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          className="form-control-sm form-control"
-                          placeholder="Email"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <input
-                          email="tel"
-                          className="form-control-sm form-control"
-                          placeholder="Phone Number"
-                        />
-                      </div>
-                      <div className="form-group">
-                        <textarea className="form-control" rows="4" cols="40" />
-                      </div>
-                      <button type="submit" className="btn btn-primary">
-                        Submit
-                      </button>
-                    </form>
+                  <div className="row mt-5">
+                    <div className="col-6">
+                      <input
+                        type="text"
+                        placeholder="Email Address"
+                        className={style.contactF}
+                      />
+                    </div>
+                    <div className="col-6">
+                      <input
+                        type="text"
+                        placeholder="Organization"
+                        className={style.contactF}
+                      />
+                    </div>
                   </div>
-                </div>
+                  <div className="row mt-5">
+                    <div className="col-lg-12">
+                      <textarea className={`${style.contactF}`} />
+                    </div>
+                  </div>
+
+                  <button
+                    className="btn btn-lg btn-block btn-outline-dark mt-5"
+                    style={{ borderRadius: "50px" }}
+                  >
+                    Send Message
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </Container>
       </div>
+      <Footer />
     </>
   );
 };

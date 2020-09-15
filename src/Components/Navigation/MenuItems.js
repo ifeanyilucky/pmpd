@@ -7,7 +7,7 @@ export const MenuItems = [
   },
   {
     title: "Who we are",
-    url: "/contact",
+    url: "/who-we-are",
     cName: `${style.navlink}`,
   },
   {
@@ -17,12 +17,12 @@ export const MenuItems = [
   },
   {
     title: "What we do",
-    url: "#",
+    url: "What-we-do",
     cName: `${style.navlink}`,
   },
   {
     title: "Contact us",
-    url: "#",
+    url: "/contact",
     cName: `${style.navlink}`,
   },
 ];
