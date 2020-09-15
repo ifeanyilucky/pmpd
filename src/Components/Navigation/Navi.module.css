@@ -7,10 +7,11 @@
   justify-content: center;
 }
 .navLogo {
-  color: blue;
+  color: #0085f2;
   justify-self: start;
   cursor: pointer;
   margin-left: 20px;
+  font-weight: 800;
 }
 
 .menuClass {

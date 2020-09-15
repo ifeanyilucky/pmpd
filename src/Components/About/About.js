@@ -1,28 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "reactstrap";
 import style from "./about.module.css";
 import Helmet from "react-helmet";
 import Navi from "../Navigation/Navi";
-import langData from "./lang.json";
+
+import Footer from "../Footer/Footer";
 
 const About = ({ title }) => {
-  const [vmb] = useState([
-    {
-      title: "VISION",
-      text:
-        "PMPD' vision is to unleash the full potential of the world’s ideas through software technology.",
-    },
-    {
-      title: "MISSION",
-      text:
-        "PMPD’ mission is to enhance the business operations of its clients by developing and/or implementing premium IT products and services.",
-    },
-    {
-      title: "BUSINESS PHILOSOPHY",
-      text:
-        "PMPD’ business philosophy is to assure the highest quality product, total client satisfaction, timely delivery of solutions and the best quality/price ratio found in the industry.",
-    },
-  ]);
+  // const [vmb] = useState([
+  //   {
+  //     title: "VISION",
+  //     text:
+  //       "PMPD' vision is to unleash the full potential of the world’s ideas through software technology.",
+  //   },
+  //   {
+  //     title: "MISSION",
+  //     text:
+  //       "PMPD’ mission is to enhance the business operations of its clients by developing and/or implementing premium IT products and services.",
+  //   },
+  //   {
+  //     title: "BUSINESS PHILOSOPHY",
+  //     text:
+  //       "PMPD’ business philosophy is to assure the highest quality product, total client satisfaction, timely delivery of solutions and the best quality/price ratio found in the industry.",
+  //   },
+  // ]);
   const about = "Who we are - PMPD Nigeria";
   return (
     <>
@@ -37,7 +38,7 @@ const About = ({ title }) => {
               <h1 className="secHead1 mt-5">
                 We create smart software solutions.
               </h1>
-              <p className="my-4 w-50 text-center mx-auto">
+              <p className="my-4 text-center">
                 PMPD helps enterprises deliver custom software solutions at
                 startup speed by building effective software teams and providing
                 agile tech talent on-demand.
@@ -88,16 +89,18 @@ const About = ({ title }) => {
               solutions.
             </p>
             <div className="row mt-5">
-              <div className="col-md-6 px-5">
-                <div>
-                  <h4 className="font-weight-bold">We focus on your goals.</h4>
+              <div className={`col-md-6 px-5`}>
+                <div className={`${style.unique} ${style.unique1}`}>
+                  <h4 className={`font-weight-bold`}>
+                    We focus on your goals.
+                  </h4>
                   <p>
                     We help you turn your business requirements into smart
                     technical solutions on time and on budget.
                   </p>
                 </div>
 
-                <div>
+                <div className={`${style.unique} ${style.unique2}`}>
                   <h4 className="font-weight-bold">
                     We are responsible & reliable.
                   </h4>
@@ -108,15 +111,17 @@ const About = ({ title }) => {
                 </div>
               </div>
               <div className="col-md-6 px-5">
-                <div>
-                  <h4 className="font-weight-bold">We shape modern work.</h4>
+                <div className={`${style.unique} ${style.unique3}`}>
+                  <h4 className="font-weight-bold style.unique">
+                    We shape modern work.
+                  </h4>
                   <p>
                     We achieve results quickly and effectively and rely on agile
                     methods, tailored to your needs.
                   </p>
                 </div>
-                <div>
-                  <h4 className="font-weight-bold">
+                <div className={`${style.unique} ${style.unique4}`}>
+                  <h4 className="font-weight-bold style.unique">
                     We care about our partners.
                   </h4>
                   <p>
@@ -127,7 +132,7 @@ const About = ({ title }) => {
               </div>
             </div>
           </Container>
-          <Container>
+          {/* <Container>
             <div className="row" style={{ marginTop: "6rem" }}>
               <div className={`${style.timeline} col-md-4 text-center`}>
                 <div className={style.digit}>2+</div>
@@ -219,8 +224,9 @@ const About = ({ title }) => {
                 ))}
               </div>
             </div>
-          </Container>
+          </Container> */}
         </section>
+        <Footer />
       </div>
     </>
   );

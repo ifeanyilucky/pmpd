@@ -46,3 +46,26 @@
   color: #02203c;
   vertical-align: middle;
 }
+.unique::before {
+  /* position: absolute;
+  left: 3rem;
+  top: -4rem; */
+  font-weight: 800;
+  font-size: 50px;
+  color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0085f2;
+}
+.unique1::before {
+  content: "01";
+}
+.unique2::before {
+  content: "02";
+}
+.unique3::before {
+  content: "03";
+}
+.unique4::before {
+  content: "04";
+}

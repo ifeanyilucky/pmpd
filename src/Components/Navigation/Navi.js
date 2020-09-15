@@ -13,7 +13,9 @@ class Navi extends Component {
   render() {
     return (
       <nav className={style.NavBarItems}>
-        <h1 className={style.navLogo}>PMPD</h1>
+        <Link to="/">
+          <h1 className={style.navLogo}>PMPD</h1>
+        </Link>
         <div className={style.menuI} onClick={this.handleClick}>
           {this.state.clicked ? (
             <FaTimes className={style.times} />
