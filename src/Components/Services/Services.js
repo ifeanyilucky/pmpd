@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-
+import style from "./Services.module.css";
 import Helmet from "react-helmet";
 import Navi from "../Navigation/Navi";
 
@@ -30,7 +30,106 @@ const Services = ({ title }) => {
             </div>
           </div>
         </Container>
-
+        <div style={{ marginTop: "5rem" }}>
+          <Container>
+            <h1 style={{ fontWeight: "700" }}>
+              We offer the following services:
+            </h1>
+            <p>We will like to work with you, check our service offering.</p>
+            <div className="row">
+              <div className="col-md-4">
+                <div className={`${style.cardBox} card`}>
+                  <div className="card-body">
+                    <div className="card-title">
+                      <h5>SOFTWARE ENGINEERING</h5>
+                    </div>
+                    <p>
+                      PMPD’s approach includes inception, iteration planning,
+                      daily standup meetings, test-driven development and
+                      iterative processes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className={`${style.cardBox} card`}>
+                  <div className="card-body">
+                    <div className="card-title">
+                      <h5>PRODUCT ADVISORY</h5>
+                    </div>
+                    <p>
+                      Our Product Advisory service enables our team work through
+                      the product ideation with the client to fine tune it to
+                      meet market needs and expectations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className={`${style.cardBox} card`}>
+                  <div className="card-body">
+                    <div className="card-title">
+                      <h5>TEAMS ENGINEERING ARCHITECTURE</h5>
+                    </div>
+                    <p>
+                      Let PMPD help you design the best engineering team that
+                      will help maximise your ROI and bring efficiency to your
+                      every day engineering processes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-4">
+                  <div className={`${style.cardBox} card`}>
+                    <div className="card-body">
+                      <div className="card-title">
+                        <h5>PRODUCT DEVELOPMENT & MANAGEMENT</h5>
+                      </div>
+                      <p>
+                        Our experience in helping organizations build and scale
+                        mission critical software projects has helped us gain a
+                        vast amount of experience in managing products vital to
+                        the success of software products.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className={`${style.cardBox} card`}>
+                    <div className="card-body">
+                      <div className="card-title">
+                        <h5>SOFTWARE ENGINEERING ARCHITECTURE</h5>
+                      </div>
+                      <p>
+                        The software architecture of a program or computing
+                        system is the structure or structures of the system,
+                        which comprise software elements, the externally visible
+                        properties of those elements, and the relationships
+                        among them.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className={`${style.cardBox} card`}>
+                    <div className="card-body">
+                      <div className="card-title">
+                        <h5>SOFTWARE TESTING </h5>
+                      </div>
+                      <p>
+                        Are you building a new product or you just launched one
+                        into the market. Let our team of professional software
+                        testers help you test the system past what you had
+                        initially anticipated.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
         <Footer />
       </div>
     </>

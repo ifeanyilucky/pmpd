@@ -31,25 +31,26 @@ const About = ({ title }) => {
         <title>{title ? title : about}</title>
       </Helmet>
       <div>
-        <Container>
-          <Navi />
-          <div className="row">
-            <div className="col-12 mx-auto text-center">
-              <h1 className="secHead1 mt-5">
-                We create smart software solutions.
-              </h1>
-              <p className="my-4 text-center">
-                PMPD helps enterprises deliver custom software solutions at
-                startup speed by building effective software teams and providing
-                agile tech talent on-demand.
-              </p>
-              <a href="/" className="Plink" style={{ fontSize: "23px" }}>
-                Get in touch
-              </a>
+        <Navi />
+        <div className={style.HeroBg}>
+          <Container>
+            <div className="row">
+              <div className="col-10 mx-auto text-center">
+                <h1 className="secHead3" style={{ fontWeight: "600" }}>
+                  We create smart software solutions.
+                </h1>
+                <p className="my-4 text-center">
+                  PMPD helps enterprises deliver custom software solutions at
+                  startup speed by building effective software teams and
+                  providing agile tech talent on-demand.
+                </p>
+                <a href="/" className="Plink" style={{ fontSize: "23px" }}>
+                  Get in touch
+                </a>
+              </div>
             </div>
-          </div>
-        </Container>
-
+          </Container>
+        </div>
         <section>
           <Container>
             <img
@@ -88,7 +89,7 @@ const About = ({ title }) => {
               We help you turn your digital strategies into smart software
               solutions.
             </p>
-            <div className="row mt-5">
+            <div className="row mt-5 mb-5">
               <div className={`col-md-6 px-5`}>
                 <div className={`${style.unique} ${style.unique1}`}>
                   <h4 className={`font-weight-bold`}>

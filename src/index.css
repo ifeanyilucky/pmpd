@@ -111,9 +111,15 @@ h6 {
   font-size: 38px;
   color: #333333;
 }
+.secHead3 {
+  font-size: 54px;
+}
 @media (max-width: 800px) {
   .secHead {
     font-size: 25px;
+  }
+  .secHead3 {
+    font-size: 28px;
   }
   .secHead1 {
     font-size: 28px;

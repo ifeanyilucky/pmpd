@@ -69,3 +69,15 @@
 .unique4::before {
   content: "04";
 }
+.HeroBg {
+  height: 685px;
+  min-height: 500px;
+  background-color: #f9fafc;
+  padding: 100px 1rem;
+  background-image: url(../../assets/dots-cloud.png),
+    url(../../assets/dots-cloud.png), url(../../assets/dots-cloud.png);
+  background-repeat: no-repeat;
+  background-position: left 10% bottom 20%, right 10% top 50%,
+    right 35% bottom 15%;
+  background-size: 180px, 140px, 100px;
+}

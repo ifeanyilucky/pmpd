@@ -24,6 +24,7 @@ function App() {
         <Route path="/hire-developer" component={hireDev} />
         <Route path="/who-we-are" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/enquiry" component={Enquiry} />
         <Route
           path="/"
           render={() => (

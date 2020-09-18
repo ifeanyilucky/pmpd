@@ -1,0 +1,13 @@
+.cardBox {
+  box-shadow: 0px 20px 30px rgba(189, 189, 189, 0.01),
+    0px 14px 30px rgba(155, 81, 224, 0.1);
+  border-radius: 4px;
+  border: 1px solid #e0e0e091;
+  margin-top: 1rem;
+}
+.card {
+  color: black !important;
+}
+.card-title.h5 {
+  font-weight: 800 !important;
+}
