@@ -31,9 +31,9 @@ section {
   );
 }
 .career {
-  border-style: solid;
+  /* border-style: solid;
   border-width: 0px 0px 0px 1px;
-  border-color: #e1e1e1;
+  border-color: #e1e1e1; */
 }
 .apply {
   text-align: center;
@@ -45,4 +45,8 @@ section {
   border-bottom: none;
   border-width: 1px;
   border-color: #e1e1e1;
+}
+.cTxt {
+  font-size: 12px;
+  font-weight: 500;
 }

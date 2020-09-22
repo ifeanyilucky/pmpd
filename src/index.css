@@ -122,11 +122,26 @@ h6 {
     font-size: 28px;
   }
   .secHead1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 .secHead1 {
   font-weight: 800;
-  font-size: 59px;
+  font-size: 45px;
   color: #333333;
+}
+.pgHeroBg {
+  height: 685px;
+  min-height: 500px;
+  background-color: #f9fafc;
+  padding: 100px 1rem;
+  background-image: url(../src/assets/dots-cloud.png),
+    url(../src/assets/dots-cloud.png), url(../src/assets/dots-cloud.png);
+  background-repeat: no-repeat;
+  background-position: left 10% bottom 20%, right 10% top 50%,
+    right 35% bottom 15%;
+  background-size: 180px, 140px, 100px;
+}
+.card {
+  border: none !important;
 }

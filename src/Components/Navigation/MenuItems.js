@@ -12,12 +12,12 @@ export const MenuItems = [
   },
   {
     title: "Portfolio",
-    url: "#",
+    url: "/portfolio",
     cName: `${style.navlink}`,
   },
   {
     title: "What we do",
-    url: "What-we-do",
+    url: "/What-we-do",
     cName: `${style.navlink}`,
   },
   {

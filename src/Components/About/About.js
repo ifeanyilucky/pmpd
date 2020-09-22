@@ -35,7 +35,7 @@ const About = ({ title }) => {
         <div className={style.HeroBg}>
           <Container>
             <div className="row">
-              <div className="col-10 mx-auto text-center">
+              <div className="col-10 mx-auto text-center" data-aos="fade-up">
                 <h1 className="secHead3" style={{ fontWeight: "600" }}>
                   We create smart software solutions.
                 </h1>
@@ -57,9 +57,10 @@ const About = ({ title }) => {
               src="https://res.cloudinary.com/codack/image/upload/v1595692486/office_aqlgdn.webp"
               alt="office"
               className="w-100"
+              data-aos="fade-up"
             />
             <div className="row mt-5">
-              <div className="col-md-8 mx-auto">
+              <div className="col-md-8 mx-auto" data-aos="fade-in">
                 <h4 className="font-weight-bold gray">Our founding story</h4>
                 <p>
                   The need for software is growing continuously. Yet enterprises
@@ -82,15 +83,17 @@ const About = ({ title }) => {
             </div>
           </Container>
           <Container>
-            <h2 className="secHead text-center mt-5">
-              What makes working with us unique?
-            </h2>
-            <p className="text-center">
-              We help you turn your digital strategies into smart software
-              solutions.
-            </p>
+            <div data-aos="fade-in">
+              <h2 className="secHead text-center mt-5">
+                What makes working with us unique?
+              </h2>
+              <p className="text-center">
+                We help you turn your digital strategies into smart software
+                solutions.
+              </p>
+            </div>
             <div className="row mt-5 mb-5">
-              <div className={`col-md-6 px-5`}>
+              <div className={`col-md-6 px-5`} data-aos="fade-in">
                 <div className={`${style.unique} ${style.unique1}`}>
                   <h4 className={`font-weight-bold`}>
                     We focus on your goals.
@@ -101,7 +104,10 @@ const About = ({ title }) => {
                   </p>
                 </div>
 
-                <div className={`${style.unique} ${style.unique2}`}>
+                <div
+                  className={`${style.unique} ${style.unique2}`}
+                  data-aos="fade-in"
+                >
                   <h4 className="font-weight-bold">
                     We are responsible & reliable.
                   </h4>
@@ -112,7 +118,10 @@ const About = ({ title }) => {
                 </div>
               </div>
               <div className="col-md-6 px-5">
-                <div className={`${style.unique} ${style.unique3}`}>
+                <div
+                  className={`${style.unique} ${style.unique3}`}
+                  data-aos="fade-in"
+                >
                   <h4 className="font-weight-bold style.unique">
                     We shape modern work.
                   </h4>
@@ -121,7 +130,10 @@ const About = ({ title }) => {
                     methods, tailored to your needs.
                   </p>
                 </div>
-                <div className={`${style.unique} ${style.unique4}`}>
+                <div
+                  className={`${style.unique} ${style.unique4}`}
+                  data-aos="fade-in"
+                >
                   <h4 className="font-weight-bold style.unique">
                     We care about our partners.
                   </h4>

@@ -23,8 +23,11 @@ function App() {
         <Route path=":quote/enquiry" component={Enquiry} />
         <Route path="/hire-developer" component={hireDev} />
         <Route path="/who-we-are" component={About} />
+        <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
         <Route path="/enquiry" component={Enquiry} />
+        <Route path="/portfolio" component={Portfolio} />
+
         <Route
           path="/"
           render={() => (
@@ -39,7 +42,7 @@ function App() {
                     />
                     <h1 className="secHead1">This is a wrong Area</h1>
                     <em className="Plink">
-                      Gtf back <Link to="/"> Home</Link>
+                      <Link to="/"> Gtf back Home</Link>
                     </em>
                   </div>
                 </div>
@@ -57,7 +60,6 @@ function Home() {
     <>
       <Header />
       <Body />
-      <Portfolio />
       <Careers />
       <Pwu />
       <Hire />
