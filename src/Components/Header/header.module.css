@@ -43,7 +43,7 @@
 }
 .link,
 .heroText h1 span {
-  background-image: linear-gradient(120deg, #333333 0%, #0077ff 100%);
+  background-image: linear-gradient(120deg, #fccd12 0%, #fccd12 100%);
   background-repeat: no-repeat;
   background-size: 50% 0.4em;
   background-position: 0 88%;

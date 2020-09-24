@@ -16,7 +16,7 @@ const Services = ({ title }) => {
       <Navi />
       <div className="pgHeroBg">
         <Container>
-          <div className="row">
+          <div className="row" data-aos="fade">
             <div className="col-12 mx-auto text-center">
               <h1 className="secHead1 mt-5">
                 We Provide World Class Software Engineering Services
@@ -33,13 +33,16 @@ const Services = ({ title }) => {
       </div>
       <div className={style.services}>
         <Container>
-          <h1 style={{ fontWeight: "700" }}>
-            We offer the following services:
-          </h1>
-          <p>We will like to work with you, check our service offering.</p>
+          <div data-aos="fade-in">
+            <h1 style={{ fontWeight: "700" }}>
+              We offer the following services:
+            </h1>
+
+            <p>We will like to work with you, check our service offering.</p>
+          </div>
           <div className="row">
             <div className="col-md-4">
-              <div className={`${style.cardBox} card`}>
+              <div className={`${style.cardBox} card`} data-aos="fade-in">
                 <div className="card-body">
                   <div className="card-title">
                     <h5>SOFTWARE ENGINEERING</h5>
@@ -53,7 +56,7 @@ const Services = ({ title }) => {
               </div>
             </div>
             <div className="col-md-4">
-              <div className={`${style.cardBox} card`}>
+              <div className={`${style.cardBox} card`} data-aos="fade-in">
                 <div className="card-body">
                   <div className="card-title">
                     <h5>PRODUCT ADVISORY</h5>
@@ -67,7 +70,7 @@ const Services = ({ title }) => {
               </div>
             </div>
             <div className="col-md-4">
-              <div className={`${style.cardBox} card`}>
+              <div className={`${style.cardBox} card`} data-aos="fade-in">
                 <div className="card-body">
                   <div className="card-title">
                     <h5>TEAMS ENGINEERING ARCHITECTURE</h5>
@@ -82,7 +85,7 @@ const Services = ({ title }) => {
             </div>
             <div className="row">
               <div className="col-md-4">
-                <div className={`${style.cardBox} card`}>
+                <div className={`${style.cardBox} card`} data-aos="fade-in">
                   <div className="card-body">
                     <div className="card-title">
                       <h5>PRODUCT DEVELOPMENT & MANAGEMENT</h5>
@@ -97,7 +100,7 @@ const Services = ({ title }) => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className={`${style.cardBox} card`}>
+                <div className={`${style.cardBox} card`} data-aos="fade-in">
                   <div className="card-body">
                     <div className="card-title">
                       <h5>SOFTWARE ENGINEERING ARCHITECTURE</h5>
@@ -113,7 +116,7 @@ const Services = ({ title }) => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className={`${style.cardBox} card`}>
+                <div className={`${style.cardBox} card`} data-aos="fade-in">
                   <div className="card-body">
                     <div className="card-title">
                       <h5>SOFTWARE TESTING </h5>
@@ -131,6 +134,17 @@ const Services = ({ title }) => {
           </div>
         </Container>
       </div>
+      <Container>
+        <div>
+          <div className="row">
+            <div className="col-md-6">
+              <h1 className="text-right">
+                We speak <br />9 Languages
+              </h1>
+            </div>
+          </div>
+        </div>
+      </Container>
       <Footer />
     </>
   );

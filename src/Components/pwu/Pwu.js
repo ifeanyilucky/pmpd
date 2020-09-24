@@ -8,7 +8,7 @@ const Pwu = () => {
       <Container>
         <div className={style.projectW}>
           <div className="row">
-            <div className={`${style.pText} col-md-6`}>
+            <div className={`${style.pText} col-md-6`} data-aos="fade-right">
               <div className={style.content}>
                 <h2 className="secHead">
                   COMPLETE SCHOOL PROJECT TOPICS MATERIALS
@@ -26,6 +26,7 @@ const Pwu = () => {
             <div className="col-md-6">
               <img
                 className="w-75 ml-5"
+                data-aos="fade-left"
                 src="https://res.cloudinary.com/codack/image/upload/v1600109115/undraw_book_lover_mkck_mlkn58.svg"
                 alt="Project-write-up"
               />

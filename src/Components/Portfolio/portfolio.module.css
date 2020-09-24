@@ -4,3 +4,68 @@
 .leftText {
   text-align: right;
 }
+.works {
+  width: 100%;
+}
+.workTitle {
+  font-weight: 800;
+  font-size: 50px;
+  color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #252525;
+}
+.workText {
+  text-align: right;
+  padding: 30px;
+}
+.workText2 {
+  text-align: left;
+  padding: 30px;
+}
+.portfolioHead {
+  border-style: red;
+  border: 4px;
+  border-color: red;
+}
+.portfolioCard {
+  margin: 30px 15px;
+  padding-top: 20px;
+  box-shadow: 0px 20px 30px rgba(189, 189, 189, 0.13), 0px 14px 30px #bdbdbd;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 350px;
+  min-width: 325px;
+}
+.portfolioImg {
+  overflow: hidden;
+  height: 350px;
+  max-width: 325px;
+}
+.portfolioBody {
+  padding: 14px 21px;
+}
+.portfolioBody .pblack {
+  background: black;
+  color: white;
+}
+.pBlue .pHead,
+.pBlue {
+  background: #0077ff;
+  color: white;
+}
+.pdarkBlue .pHead,
+.pdarkBlue {
+  background: #064cb0;
+  color: white;
+}
+.pGreen .pHead,
+.pGreen {
+  background: #117042;
+  color: white;
+}
+.pdeepGreen .pHead,
+.pdeepGreen {
+  background: #117042;
+  color: white;
+}

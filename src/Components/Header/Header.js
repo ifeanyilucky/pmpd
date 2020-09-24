@@ -43,7 +43,7 @@ function Header() {
                     to="/enquiry"
                     style={{ color: "#212529" }}
                   >
-                    <div className={`${style.link}`}>Let's talk</div>
+                    <button className="pmpd-btn">Let's talk</button>
                   </Link>
                 </div>
               </div>

@@ -32,7 +32,7 @@ function Hire() {
       <section className={style.hire}>
         <Container>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-right">
               <h4 className="secHead text-white">Get to know our experts</h4>
               <p>
                 We are a network of more than 150 experienced tech experts from
@@ -44,8 +44,10 @@ function Hire() {
                 solutions. You can hire us individually or as a whole team to
                 work on your project.
               </p>
-              <a href="/" className="Plink text-white">
-                Hire experts
+              <a href="/">
+                <button className="pmpd-btn pmpd-btn-white">
+                  Hire experts
+                </button>
               </a>
             </div>
             <div className="col-md-6"></div>
