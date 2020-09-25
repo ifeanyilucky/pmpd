@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 import style from "./about.module.css";
 import Helmet from "react-helmet";
 import Navi from "../Navigation/Navi";
-
+import {Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
 const About = ({ title }) => {
@@ -44,9 +44,9 @@ const About = ({ title }) => {
                   startup speed by building effective software teams and
                   providing agile tech talent on-demand.
                 </p>
-                <a href="/" className="Plink" style={{ fontSize: "23px" }}>
+                <Link to="/contact" className="Plink" style={{ fontSize: "23px" }}>
                   Get in touch
-                </a>
+                </Link>
               </div>
             </div>
           </Container>

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Components/Header/Header";
 import Services from "./Components/Services/Services";
 import Hire from "./Components/Hire/Hire";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, HashRouter } from "react-router-dom";
 import Body from "./Components/Body/Body";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Enquiry from "./Components/Enquiry/Enquiry";
@@ -16,7 +16,7 @@ import { Container } from "reactstrap";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/What-we-do" component={Services} />
@@ -51,7 +51,7 @@ function App() {
           )}
         />
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
