@@ -11,7 +11,8 @@ const BtnGroup = styled.div`
   align-items: center;
   justify-content: center space-between;
   flex-flow: row;
-  margin: auto;
+  margin-top: 2rem;
+  display: block;
   button:nth-child(2) {
     margin-left: 10px;
   }
