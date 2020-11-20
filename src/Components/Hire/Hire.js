@@ -24,7 +24,7 @@ function Hire() {
             <img
               src="https://res.cloudinary.com/codack/image/upload/v1600030060/technologies_nbv5nq.png"
               alt="stacks"
-              className="mx-auto"
+              className="mx-auto w-75"
             />
           </div>
         </Container>

@@ -2,9 +2,9 @@ import React from "react";
 import { Container } from "reactstrap";
 import style from "./about.module.css";
 import Helmet from "react-helmet";
-import Navi from "../Navigation/Navi";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import Navbar from "../Nav/Navbar";
 
 const About = ({ title }) => {
   // const [vmb] = useState([
@@ -31,7 +31,9 @@ const About = ({ title }) => {
         <title>{title ? title : about}</title>
       </Helmet>
       <div>
-        <Navi />
+        <Container>
+          <Navbar />
+        </Container>
         <div className={style.HeroBg}>
           <Container>
             <div className="row">
@@ -44,7 +46,11 @@ const About = ({ title }) => {
                   startup speed by building effective software teams and
                   providing agile tech talent on-demand.
                 </p>
-                <Link to="/contact" className="Plink" style={{ fontSize: "23px" }}>
+                <Link
+                  to="/contact"
+                  className="Plink"
+                  style={{ fontSize: "23px" }}
+                >
                   Get in touch
                 </Link>
               </div>

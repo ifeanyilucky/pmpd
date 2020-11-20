@@ -1,20 +1,28 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { Container } from "reactstrap";
 import style from "./header.module.css";
-import { Link } from "react-router-dom";
-import Aos from "aos";
-import Navi from "../Navigation/Navi";
-function Header() {
-  useEffect(() => {
-    Aos.init({ length: 2000 });
-  });
+import Navbar from "../Nav/Navbar";
+import styled from "styled-components";
+
+const BtnGroup = styled.div`
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center space-between;
+  flex-flow: row;
+  margin: auto;
+  button:nth-child(2) {
+    margin-left: 10px;
+  }
+`;
+
+const Header = () => {
   return (
     <>
       <div className={style.header}>
-        <div className={style.heroBox}></div>
-        <Navi />
         <Container>
+          <Navbar />
           <div className="row mt-5" data-aos="fade">
             <div className={`${style.heroText} col-md-5`}>
               <span className="text-muted">SOFTWARE DESIGN & DEVELOPMENT</span>
@@ -25,29 +33,17 @@ function Header() {
                 <br />
                 Do PMPD
               </h1>
-              <p
-                style={{
-                  fontSize: "16px",
-                  fontWeight: "300",
-                  lineHeight: "26px",
-                }}
-              >
+              <p>
                 We are Software Engineers, Designers, Product Managers and
                 Strategists. We help startups and established companies
                 implement and advance their client experiences using technology.
               </p>
-              <div className="row">
-                <div className="col-7 mt-3">
-                  <Link
-                    className="text-decoration-none"
-                    to="/enquiry"
-                    style={{ color: "#212529" }}
-                  >
-                    <button className="pmpd-btn">Let's talk</button>
-                  </Link>
-                </div>
-              </div>
+              <BtnGroup>
+                <button className="pmpd-btn">About</button>
+                <button className="pmpd-btn pmpd-btn-outline">Enquiry</button>
+              </BtnGroup>
             </div>
+
             <div className="col-lg-7">
               <div>
                 <img
@@ -62,6 +58,6 @@ function Header() {
       </div>
     </>
   );
-}
+};
 
 export default Header;

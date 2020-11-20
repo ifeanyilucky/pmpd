@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import Navi from "../Navigation/Navi";
 import style from "./contact.module.css";
 import Footer from "../Footer/Footer";
+import Navbar from "../Nav/Navbar";
 class Contact extends Component {
   state = {
     name: "",
@@ -32,9 +32,9 @@ class Contact extends Component {
     const { name, message, tel, email } = this.state;
     return (
       <>
-        <Navi />
         <div className={style.contactS}>
           <div className="container">
+            <Navbar />
             <div className="row pt-5 pb-5">
               <div className="col-xl-6">
                 <div>

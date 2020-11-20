@@ -1,14 +1,11 @@
 import React from "react";
 import style from "./enquiry.module.css";
 import { Form, FormGroup, Label, Input, Container } from "reactstrap";
-import Navi from "../Navigation/Navi";
 
 const Enquiry = () => {
   return (
     <>
       <Container>
-        <Navi />
-
         <div className="text-center mt-5 mb-5">
           <h1 className="secHead1">Tell us about your product</h1>
           <span className="text-muted">

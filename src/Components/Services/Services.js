@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "reactstrap";
 import style from "./Services.module.css";
 import Helmet from "react-helmet";
-import Navi from "../Navigation/Navi";
 
 import Footer from "../Footer/Footer";
 
@@ -13,7 +12,7 @@ const Services = ({ title }) => {
       <Helmet>
         <title>{title ? title : about}</title>
       </Helmet>
-      <Navi />
+
       <div className="pgHeroBg">
         <Container>
           <div className="row" data-aos="fade">

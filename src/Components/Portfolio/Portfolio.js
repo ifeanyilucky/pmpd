@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./portfolio.module.css";
-import Navi from "../Navigation/Navi";
+import Navbar from "../Nav/Navbar";
 import Projects from "./Project";
 
 import Footer from "../Footer/Footer";
@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <>
       <div className="container">
-        <Navi />
+        <Navbar />
       </div>
       <div className="pgHeroBg">
         <div className={style.portfolio}>
