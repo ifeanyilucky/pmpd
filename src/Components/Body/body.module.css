@@ -41,14 +41,14 @@ section {
 .desktop {
   width: 100%;
 }
-.SProject {
+/* .SProject {
   margin-top: 10rem;
-}
+} */
 .link_arrow {
   overflow: hidden;
   height: 1em;
   margin-left: 0.5em;
-  margin-bottom: -0.125em;
+
   stroke: currentColor;
   stroke-width: 2;
   fill: transparent;
