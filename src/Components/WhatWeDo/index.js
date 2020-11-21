@@ -1,7 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const WhatWeDo = () => {
   return (
     <WHAT_WE_DO>
@@ -22,7 +22,11 @@ const WhatWeDo = () => {
             take on any project by creating a diverse team who can bring their
             experience and perspectives together to solve problems.
           </p>
-          <button className="pmpd-btn">ABOUT US</button>
+          <button className="pmpd-btn">
+            <Link to="/who-we-are" className="link">
+              ABOUT US
+            </Link>
+          </button>
         </div>
       </WHO_WE_ARE>
       <div className="container">
