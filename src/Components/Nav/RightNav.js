@@ -26,7 +26,11 @@ const RightNav = ({ open }) => {
           </Link>
         </li>
         <div className="btn-wrapper">
-          <button className="pmpd-btn styledInNav">Enquiry</button>
+          <button className="pmpd-btn styledInNav">
+            <Link to="/enquiry" className="link">
+              Enquiry
+            </Link>
+          </button>
         </div>
       </Ul>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/logosmall.png";
 const WhatWeDo = () => {
   return (
     <WHAT_WE_DO>
@@ -9,7 +10,8 @@ const WhatWeDo = () => {
         <div className="container">
           <div className="image__wrapper">
             <img
-              src="https://res.cloudinary.com/codack/image/upload/v1605990449/w1_ifjzqf.png"
+              src={Logo}
+              // src="https://res.cloudinary.com/codack/image/upload/v1605990449/w1_ifjzqf.png"
               alt="who we are"
             />
           </div>

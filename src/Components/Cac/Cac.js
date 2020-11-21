@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Cac = () => {
   return (
     <div>
-      <div className="container-fluid">
+      <ContainerFluid>
         <CACB>
           <h1>(CAC Business & Company Registration)</h1>
           <p className="text-muted">
@@ -23,7 +23,7 @@ const Cac = () => {
           className="w-100"
           alt="CAC"
         />
-      </div>
+      </ContainerFluid>
     </div>
   );
 };
@@ -37,5 +37,9 @@ const CACB = styled.div`
   @media (max-width: 860px) {
     width: 100%;
   }
+`;
+
+const ContainerFluid = styled.div`
+  width: 100%;
 `;
 export default Cac;
