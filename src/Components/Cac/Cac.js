@@ -33,5 +33,9 @@ const CACB = styled.div`
   margin: 0 auto;
   padding-bottom: -10rem;
   padding-top: 5rem;
+
+  @media (max-width: 860px) {
+    width: 100%;
+  }
 `;
 export default Cac;

@@ -134,6 +134,9 @@ const WHO_WE_ARE = styled.div`
   width: 70%;
   margin: 0 auto;
   margin-bottom: 5rem;
+  @media (max-width: 860px) {
+    width: 100%;
+  }
 
   .image__wrapper {
     padding: 14px 14px;
