@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
 import style from "./body.module.css";
 
-import Aos from "aos";
-
 const Body = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   const [reason] = useState([
     {
       title: "INSIGHT",
