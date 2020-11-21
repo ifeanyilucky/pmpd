@@ -8,13 +8,17 @@ import styled from "styled-components";
 const BtnGroup = styled.div`
   display: flex;
   text-align: center;
-  align-items: center;
+
   justify-content: center space-between;
   flex-flow: row;
   margin-top: 2rem;
-  display: block;
+
   button:nth-child(2) {
     margin-left: 10px;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    align-items: center;
   }
 `;
 
