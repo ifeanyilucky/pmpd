@@ -6,22 +6,22 @@ const RightNav = ({ open }) => {
     <div>
       <Ul open={open}>
         <li>
-          <Link className="link" to="/">
+          <Link className="navbar__link" to="/">
             Home
           </Link>
         </li>
         <li>
-          <Link className="link" to="/portfolio">
+          <Link className="navbar__link" to="/portfolio">
             Portfolio
           </Link>
         </li>
         <li>
-          <Link className="link" to="/who-we-are">
+          <Link className="navbar__link" to="/who-we-are">
             About
           </Link>
         </li>
         <li>
-          <Link className="link" to="/contact">
+          <Link className="navbar__link" to="/contact">
             Contact
           </Link>
         </li>
@@ -39,6 +39,14 @@ const Ul = styled.ul`
 
   li {
     padding: 18px 10px;
+    .navbar__link {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: grey;
+      }
+    }
   }
   @media (max-width: 768px) {
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -55,14 +63,18 @@ const Ul = styled.ul`
     width: 100%;
     height: 100vh;
     z-index: 10;
-    padding-top: 3.5rem;
+    padding-top: 3.8rem;
+    vertical-align: middle;
     li {
       color: black;
       border-bottom: 1px solid #f3f3f3;
 
-      .link {
+      .navbar__link {
         text-decoration: none;
         color: black;
+        &:hover {
+          color: grey;
+        }
       }
     }
 

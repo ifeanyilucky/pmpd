@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Container } from "reactstrap";
 import style from "./header.module.css";
@@ -28,7 +29,7 @@ const Header = () => {
       <div className={style.header}>
         <Container>
           <Navbar />
-          <div className="row mt-5" data-aos="fade">
+          <div className="row mt-5">
             <div className={`${style.heroText} col-md-5`}>
               <span className="text-muted">SOFTWARE DESIGN & DEVELOPMENT</span>
               <h1>
@@ -44,8 +45,16 @@ const Header = () => {
                 implement and advance their client experiences using technology.
               </p>
               <BtnGroup>
-                <button className="pmpd-btn">About</button>
-                <button className="pmpd-btn pmpd-btn-outline">Enquiry</button>
+                <button className="pmpd-btn">
+                  <Link to="/who-we-are" className="link">
+                    About
+                  </Link>
+                </button>
+                <button className="pmpd-btn pmpd-btn-outline">
+                  <Link to="/enquiry" className="link">
+                    Enquiry
+                  </Link>
+                </button>
               </BtnGroup>
             </div>
 

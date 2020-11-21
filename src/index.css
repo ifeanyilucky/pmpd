@@ -7,8 +7,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #545465 !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 code {
@@ -192,4 +193,8 @@ h6 {
 .pmpd-btn-white {
   background-color: #f8d300;
   color: #0077ff;
+}
+.link {
+  text-decoration: none !important;
+  color: inherit;
 }
