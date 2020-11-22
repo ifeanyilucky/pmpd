@@ -6,7 +6,7 @@ const Cac = () => {
     <div>
       <ContainerFluid>
         <CACB>
-          <h1>(CAC Business & Company Registration)</h1>
+          <h1 className="body__head">(CAC Business & Company Registration)</h1>
           <p className="text-muted">
             If your business is a joint venture, an LLC, corporation,
             partnership, or nonprofit corporation, you’ll probably need to

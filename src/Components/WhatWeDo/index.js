@@ -15,7 +15,7 @@ const WhatWeDo = () => {
               alt="who we are"
             />
           </div>
-          <h1>WHO WE ARE</h1>
+          <h1 className="body__head">WHO WE ARE</h1>
           <p className="text-muted">
             We are a boutique digital transformation, consultancy and software
             development company that focus on building world class products,
@@ -33,7 +33,7 @@ const WhatWeDo = () => {
       </WHO_WE_ARE>
       <div className="container">
         <HeaderText>
-          <h1>What we do</h1>
+          <h1 className="body__head">WHAT WE DO</h1>
           <p className="text-muted">
             We build apps that scale on every platform or screen.
           </p>
@@ -101,10 +101,14 @@ const ImageBoxWrapper = styled.div`
 
   @media (max-width: 850px) {
     flex-flow: column nowrap;
-    align-items: center;
+    flex: 100;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
     .box__image {
       width: 100%;
     }
+    align-content: center;
   }
   .image__box {
     margin-right: 2rem;
@@ -113,10 +117,18 @@ const ImageBoxWrapper = styled.div`
     justify-content: center;
     border-radius: 5px;
     @media (max-width: 850px) {
+      margin-left: 2rem;
+      align-items: center;
+      flex: 1;
+      text-align: center;
+
       align-items: center;
       margin-bottom: 2rem;
       .box__container {
         margin-bottom: 0;
+        h4 {
+          font-size: 20px;
+        }
       }
     }
     .box__container {
