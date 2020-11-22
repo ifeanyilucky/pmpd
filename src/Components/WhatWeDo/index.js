@@ -121,7 +121,7 @@ const ImageBoxWrapper = styled.div`
       align-items: center;
       flex: 1;
       text-align: center;
-
+      justify-content: space-around;
       align-items: center;
       margin-bottom: 2rem;
       .box__container {
