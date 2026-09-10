@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
     "framer-motion": "^2.9.4",
-    "nodemailer": "^6.4.16",
+    "nodemailer": "^9.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
